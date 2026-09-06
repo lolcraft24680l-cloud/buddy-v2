@@ -1,0 +1,76 @@
+name: BUDDY
+options:
+  bundleIdPrefix: de.julian
+  deploymentTarget:
+    iOS: "17.0"
+
+targets:
+  BUDDY:
+    type: application
+    platform: iOS
+    sources:
+      - BUDDYApp.swift
+      - KI.swift
+      - Gehirn.swift
+      - Werkzeuge.swift
+      - Stimme.swift
+      - Dateien.swift
+      - Gesicht.swift
+      - ContentView.swift
+      - Assets.xcassets
+    info:
+      path: Info.plist
+      properties:
+        CFBundleDisplayName: BUDDY
+        CFBundleShortVersionString: "2.0"
+        CFBundleVersion: "4"
+        UILaunchScreen: {}
+        UIUserInterfaceStyle: Dark
+        UIRequiresFullScreen: true
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+        UIRequiredDeviceCapabilities:
+          - arm64
+        ITSAppUsesNonExemptEncryption: false
+        NSMicrophoneUsageDescription: "BUDDY hoert zu, damit du mit ihm sprechen kannst."
+        NSSpeechRecognitionUsageDescription: "BUDDY wandelt deine Sprache in Text um, um antworten zu koennen."
+        NSLocationWhenInUseUsageDescription: "BUDDY braucht deinen Standort fuer Wetter und Navigation."
+        NSCameraUsageDescription: "Nur um die Taschenlampe zu schalten."
+        NSAppleMusicUsageDescription: "Damit BUDDY deine Musik starten und pausieren kann."
+        NSRemindersFullAccessUsageDescription: "Damit BUDDY Erinnerungen fuer dich anlegen kann."
+        NSCalendarsFullAccessUsageDescription: "Damit BUDDY Termine eintragen und vorlesen kann."
+        NSPhotoLibraryUsageDescription: "Damit BUDDY Bilder auswerten kann, die du aussuchst."
+        UISupportsDocumentBrowser: false
+        LSApplicationQueriesSchemes:
+          - shortcuts
+          - whatsapp
+          - spotify
+          - instagram
+          - youtube
+          - tg
+          - maps
+          - music
+          - sms
+          - tel
+          - calshow
+          - mobilenotes
+          - twitter
+          - reddit
+          - discord
+          - nflx
+          - snapchat
+          - sgnl
+          - paypal
+          - weather
+          - camera
+          - photos-redirect
+          - itms-apps
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: de.julian.buddy
+        MARKETING_VERSION: "2.0"
+        CURRENT_PROJECT_VERSION: "4"
+        TARGETED_DEVICE_FAMILY: "1"
+        SWIFT_VERSION: "5.9"
+        GENERATE_INFOPLIST_FILE: NO
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
